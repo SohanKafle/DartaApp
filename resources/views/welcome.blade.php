@@ -23,6 +23,17 @@
                             Login to your account
                         </h2>
                     </div>
+                    <!-- Error Messages Display -->
+                    @if ($errors->any())
+                        <div class="mb-6 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <div class="mt-6">
                         <form action="{{route('login')}}" class="space-y-6" method="POST">
                             @csrf

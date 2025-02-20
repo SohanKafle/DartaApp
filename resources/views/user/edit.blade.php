@@ -12,6 +12,7 @@
             <form action="{{ route('user.update') }}" method="POST" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 @csrf
                 @method('PATCH')
+
                 <!-- First Name -->
                 <div class="mb-4">
                     <label for="firstname" class="block text-gray-700 font-semibold mb-2">First Name</label>
@@ -58,7 +59,6 @@
                     <input type="email" id="email" name="email" value="{{ old('email', $user->email) }}" required
                         class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
                 </div>
-
 
 
                 <!-- Address -->
