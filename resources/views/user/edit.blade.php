@@ -38,12 +38,6 @@
                         oninput="transliterateText()" value="{{ old('companyname', $user->companyname) }}" required>
                 </div>
 
-                <!-- Company Name in Nepali -->
-                <!-- <div class="mb-4">
-                        <label for="companyname" class="block text-gray-700 font-semibold mb-2">Company Name in Nepali</label>
-                        <input type="text" id="company-name" name="companyname" value="{{ old('companyname', $user->companyname) }}" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400">
-                    </div> -->
-
                 <div class="sm:col-span-2">
                     <label for="nepaliInput" class="text-base font-medium text-gray-700">Purposed
                         Company Name in Nepali</label>
